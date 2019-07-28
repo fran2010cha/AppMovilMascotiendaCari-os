@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:showIn="@layout/app_bar_main"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<TextView
+		android:text="Listar Mascotas"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="224.5dp"
+		android:layout_height="70.5dp"
+		android:layout_below="@id/textView1"
+		android:id="@+id/textView2" />
+	<TableLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="361.5dp"
+		android:layout_height="274.0dp"
+		android:layout_below="@id/textView2"
+		android:id="@+id/tableLayout1">
+		<TableRow
+			android:id="@+id/tableRow1"
+			android:layout_height="83.0dp">
+			<TextView
+				android:text="Nombre"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="0"
+				android:id="@+id/textView8"
+				android:layout_width="73.0dp"
+				android:layout_height="70.5dp" />
+			<TextView
+				android:text="Descripcion"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="1"
+				android:id="@+id/textView9" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow2">
+			<TextView
+				p4:placeholder="true"
+				android:minWidth="30px"
+				android:minHeight="30px"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/textView6"
+				android:layout_height="73.0dp"
+				android:layout_width="111.5dp" />
+			<TextView
+				p4:placeholder="true"
+				android:minWidth="30px"
+				android:minHeight="30px"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/textView7"
+				android:layout_height="75.0dp" />
+			<ImageView
+				android:src="@android:drawable/ic_menu_gallery"
+				android:layout_column="2"
+				android:id="@+id/imageView2" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow2">
+			<TextView
+				p4:placeholder="true"
+				android:minWidth="30px"
+				android:minHeight="30px"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/textView6"
+				android:layout_height="79.5dp" />
+			<TextView
+				p4:placeholder="true"
+				android:minWidth="30px"
+				android:minHeight="30px"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/textView7"
+				android:layout_height="76.5dp" />
+			<ImageView
+				android:src="@android:drawable/ic_menu_gallery"
+				android:layout_column="2"
+				android:id="@+id/imageView2" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow2">
+			<TextView
+				p4:placeholder="true"
+				android:minWidth="30px"
+				android:minHeight="30px"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/textView6"
+				android:layout_height="68.5dp" />
+			<TextView
+				p4:placeholder="true"
+				android:minWidth="30px"
+				android:minHeight="30px"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/textView7"
+				android:layout_height="79.5dp" />
+			<ImageView
+				android:src="@android:drawable/ic_menu_gallery"
+				android:layout_column="2"
+				android:id="@+id/imageView2" />
+		</TableRow>
+	</TableLayout>
+	<RadioGroup
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="wrap_content"
+		android:layout_height="100.5dp"
+		android:layout_toRightOf="@id/textView2"
+		android:id="@+id/radioGroup1">
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:text="Adopcion"
+			android:id="@+id/radioButton1" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Compra"
+			android:id="@+id/radioButton2" />
+	</RadioGroup>
+	
+	
+	
+
+</RelativeLayout>
