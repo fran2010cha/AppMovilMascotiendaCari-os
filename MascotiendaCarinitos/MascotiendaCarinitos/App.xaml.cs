@@ -1,5 +1,4 @@
-﻿using MascotiendaCarinitos.Views;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,15 +7,13 @@ namespace MascotiendaCarinitos
 {
     public partial class App : Application
     {
-        #region Constructors
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new MainPage();
         }
-        #endregion
-        #region Methods
+
         protected override void OnStart()
         {
             // Handle when your app starts
@@ -31,6 +28,5 @@ namespace MascotiendaCarinitos
         {
             // Handle when your app resumes
         }
-        #endregion
     }
 }
